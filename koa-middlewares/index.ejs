@@ -1,0 +1,26 @@
+<!--
+ 如果你使用过ejs，那么想必你一定知道它是用来在服务端帮我们渲染页面的模版引擎之一。
+ 它的用法类似jsp
+ ejs的用法 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejs</title>
+</head>
+<body>
+    <%=name%>
+    <%=age%>
+
+    <%if (name=="panda") {%>
+        panda
+    <%} else {%>
+        shen
+    <%}%>
+
+    <%arr.forEach(item => {%>
+        <li><%=item%></li>
+    <%})%>
+</body>
+</html>
