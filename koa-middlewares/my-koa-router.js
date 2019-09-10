@@ -22,7 +22,7 @@ class Router {
         this.layers.push(new Layer(path, cb));
     }
     compose(ctx, next, handlers) {
-        // 将匹配的路由函数串联执行
+        // 将匹配的路由函数串联执行 #todo: 这里处理应该改成promise
         function dispatch(index) {
             // 如果当前 index 个数大于了存储路由对象的长度，则执行 Koa 的 next 方法
             if(index >= handlers.length) return next();
